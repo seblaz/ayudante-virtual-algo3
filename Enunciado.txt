@@ -1,0 +1,7 @@
+a) Se desea programar el módulo de mensajes del @Ayudante virtual. El mismo debe ser capaz de entender los mensajes enviados por los alumnos y responderlos. Las reglas son las siguientes:
+ - Si el mensaje del alumno comienza con "hola", "cómo estás?" o "ayuda" debe responder "Hola @alumno! Acá podés enviar consultas particulares que no puedas compartir en canales con otros alumnos. Simplemente enviame la consulta, empezando con "Tengo una consulta", y uno de los ayudantes se contactará con vos en cuanto le sea posible.".
+ - Si el mensaje comienza con "Tengo una consulta" debe responder "Gracias por enviar tu consulta, en breve un ayudante te contactará para resolverla. Saludos!".
+ - Si el mensaje no califica de en ninguna de las reglas anteriores, debe responder "Lo siento, no entendí lo que querés hacer. Escribí "ayuda" para ver que puedo hacer por vos.".
+Tener en cuenta que la respuesta de los mensajes deben enviarse a través de la API de Slack.
+ 
+b) Cuando el @Ayudante virtual responde los mensajes que comienzan con "Tengo una consulta" adicionalmente se debe notificar a los ayudantes de la cátedra sobre la consulta. Esto también debe realizarse a través de la API de slack, enviando la consulta a un canal previamente establecido.
